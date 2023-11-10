@@ -19,11 +19,15 @@ namespace Calculator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int a, b, c;
-            a = int.Parse(textBox1.Text);
-            b = int.Parse(textBox2.Text);
-            c = a + b;
-            textBox3.Text = c.ToString();
+            if (textBox1.Text != String.Empty)
+            {
+                int a, b, c;
+                a = int.Parse(textBox1.Text);
+                b = int.Parse(textBox2.Text);
+                c = a + b;
+                textBox3.Text = c.ToString();
+            }
+          
         }
     }
 }
